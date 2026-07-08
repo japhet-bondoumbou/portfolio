@@ -1,0 +1,117 @@
+/* ===== Style personnalisé minimal ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09090B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2563EB;
+  border-radius: 3px;
+}
+
+#site-header {
+  will-change: transform, background-color, box-shadow;
+}
+
+#site-header.site-header-scrolled nav {
+  background: rgba(9, 9, 11, 0.82);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
+  transform: translateY(-2px) scale(0.985);
+}
+
+.mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-8px);
+  transition: max-height 0.35s ease, opacity 0.35s ease, transform 0.35s ease, padding 0.35s ease;
+}
+.mobile-menu.open {
+  max-height: 320px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#menu-toggle i {
+  transition: transform 0.3s ease;
+}
+
+#menu-toggle .fa-times {
+  transform: rotate(180deg);
+}
+
+.project-card {
+  will-change: transform, border-color, box-shadow;
+}
+
+.filter-btn {
+  scroll-snap-align: start;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.hero-animate {
+  animation: heroFadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.hero-animate-delay {
+  animation-delay: 0.15s;
+}
+
+.hero-chip:hover {
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
+
+.hero-card-float {
+  animation: heroFloat 6s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.hero-card-delay-1 {
+  animation-delay: 0.8s;
+}
+
+.hero-card-delay-2 {
+  animation-delay: 1.6s;
+}
+
+.hero-card-delay-3 {
+  animation-delay: 2.4s;
+}
+
+.back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}

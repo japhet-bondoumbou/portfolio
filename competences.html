@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétences | Japhet BONDOUMBOU</title>
+  <meta name="description" content="Compétences techniques de Japhet BONDOUMBOU : frontend, backend, bases de données, outils." />
+  <meta name="keywords" content="compétences, développement web, frontend, backend, Japhet BONDOUMBOU" />
+  <link rel="canonical" href="https://www.alexmartin.fr/competences.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Compétences | Japhet BONDOUMBOU" />
+  <meta property="og:description" content="Compétences techniques." />
+  <meta property="og:url" content="https://www.alexmartin.fr/competences.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            violet: '#7C3AED',
+            cyan: '#06B6D4',
+            dark: '#09090B',
+            darker: '#18181B',
+            gray: '#A1A1AA',
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-dark text-white font-body antialiased">
+
+  <header id="site-header" class="fixed top-4 left-1/2 z-50 w-[calc(100%-1rem)] max-w-6xl -translate-x-1/2 transition-all duration-300 sm:w-[calc(100%-2rem)]">
+    <nav class="mx-auto flex h-16 items-center justify-between rounded-full border border-white/10 bg-white/10 px-4 shadow-[0_10px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3 text-white transition-colors hover:text-primary">
+        <img src="assets/images/Logo.png" alt="Logo Japhet BONDOUMBOU" class="h-10 w-10 rounded-full object-cover shadow-lg shadow-primary/20" />
+        <span class="leading-tight">
+          <span class="block font-heading text-sm font-semibold sm:text-base">Japhet BONDOUMBOU</span>
+          <span class="block text-[10px] uppercase tracking-[0.28em] text-gray sm:text-[11px]">Software Engineer</span>
+        </span>
+      </a>
+      <div class="hidden items-center gap-2 md:flex">
+        <a href="index.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Accueil</a>
+        <a href="portfolio.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Portfolio</a>
+        <a href="competences.html" class="nav-link rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15 hover:text-white">Compétences</a>
+        <a href="apropos.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">À propos</a>
+        <a href="contact.html" class="cta-nav ml-2 inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">Contact</a>
+      </div>
+      <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15 md:hidden" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars text-lg transition-all duration-300"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+      <div class="mt-3 flex flex-col gap-2 rounded-[1.4rem] border border-white/10 bg-dark/80 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+        <a href="index.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Accueil</a>
+        <a href="portfolio.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Portfolio</a>
+        <a href="competences.html" class="nav-link rounded-full bg-white/10 px-4 py-2.5 text-sm font-medium text-white">Compétences</a>
+        <a href="apropos.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">À propos</a>
+        <a href="contact.html" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white text-center shadow-lg shadow-primary/20 transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pb-20 pt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-transparent px-6 py-12 shadow-[0_20px_60px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:px-8 lg:px-12 lg:py-16" data-aos="fade-up">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.16),transparent_55%)]"></div>
+        <div class="relative mx-auto max-w-3xl text-center">
+          <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/90">
+            <span class="h-2 w-2 rounded-full bg-primary"></span>
+            Expertise
+          </span>
+          <h1 class="font-heading text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Compétences</h1>
+          <p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray sm:text-lg">Un ensemble de compétences techniques et humaines pour concevoir, développer et améliorer des solutions numériques modernes.</p>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <div class="mb-8 max-w-2xl" data-aos="fade-up">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Hard Skills</p>
+          <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Compétences techniques</h2>
+          <p class="mt-3 text-sm leading-7 text-gray sm:text-base">Les technologies et outils que j’utilise pour concevoir des applications performantes, évolutives et centrées sur l’utilisateur.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="group rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-start gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition duration-300 group-hover:scale-110">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Front-end</h3>
+                <p class="mt-2 text-sm leading-7 text-gray">Création d’interfaces modernes, accessibles et responsives.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">HTML</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">CSS</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">JavaScript</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">TypeScript</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">React</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">Tailwind CSS</span>
+            </div>
+          </article>
+
+          <article class="group rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-violet/40 hover:shadow-[0_24px_70px_rgba(124,58,237,0.14)]" data-aos="fade-up" data-aos-delay="150">
+            <div class="flex items-start gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet/10 text-violet transition duration-300 group-hover:scale-110">
+                <i class="fas fa-server"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Back-end</h3>
+                <p class="mt-2 text-sm leading-7 text-gray">Développement de la logique serveur et création d’API robustes.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">PHP</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">Laravel</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">Node.js</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">API REST</span>
+            </div>
+          </article>
+
+          <article class="group rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(6,182,212,0.14)]" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-start gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan/10 text-cyan transition duration-300 group-hover:scale-110">
+                <i class="fas fa-database"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Base de données</h3>
+                <p class="mt-2 text-sm leading-7 text-gray">Conception et gestion de bases de données fiables et performantes.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">MySQL</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">PostgreSQL</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">Oracle</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">SQL</span>
+            </div>
+          </article>
+
+          <article class="group rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-aos="fade-up" data-aos-delay="250">
+            <div class="flex items-start gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition duration-300 group-hover:scale-110">
+                <i class="fas fa-tools"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Outils</h3>
+                <p class="mt-2 text-sm leading-7 text-gray">Les outils utilisés pour développer efficacement et collaborer sereinement.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">Git</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">GitHub</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">VS Code</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">Figma</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-primary/20 hover:bg-primary/10 hover:text-primary">Docker</span>
+            </div>
+          </article>
+
+          <article class="group rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-violet/40 hover:shadow-[0_24px_70px_rgba(124,58,237,0.14)]" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-start gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet/10 text-violet transition duration-300 group-hover:scale-110">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">UI/UX Design</h3>
+                <p class="mt-2 text-sm leading-7 text-gray">Création d’expériences utilisateur intuitives, cohérentes et engageantes.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">Figma</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">Wireframes</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">Prototypage</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-violet/20 hover:bg-violet/10 hover:text-violet">Design System</span>
+            </div>
+          </article>
+
+          <article class="group rounded-[1.6rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(6,182,212,0.14)]" data-aos="fade-up" data-aos-delay="350">
+            <div class="flex items-start gap-3">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan/10 text-cyan transition duration-300 group-hover:scale-110">
+                <i class="fas fa-ellipsis-h"></i>
+              </div>
+              <div>
+                <h3 class="font-heading text-lg font-semibold text-white">Autres</h3>
+                <p class="mt-2 text-sm leading-7 text-gray">Des compétences complémentaires qui enrichissent mon profil et mes projets.</p>
+              </div>
+            </div>
+            <div class="mt-5 flex flex-wrap gap-2">
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">Responsive Design</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">SEO</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">Déploiement</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">Méthodes Agile</span>
+              <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-gray transition duration-300 hover:-translate-y-0.5 hover:border-cyan/20 hover:bg-cyan/10 hover:text-cyan">Veille technologique</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-16">
+        <div class="mb-8 max-w-2xl" data-aos="fade-up">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Soft Skills</p>
+          <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Compétences humaines</h2>
+          <p class="mt-3 text-sm leading-7 text-gray sm:text-base">Les qualités qui influencent ma façon de collaborer, apprendre et résoudre des problèmes.</p>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="mt-4 font-heading text-lg font-semibold text-white">Résolution de problèmes</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Transformer un problème complexe en solution simple, efficace et durable.</p>
+          </div>
+
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl" data-aos="fade-up" data-aos-delay="150">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan/10 text-cyan">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3 class="mt-4 font-heading text-lg font-semibold text-white">Apprentissage continu</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Toujours apprendre et explorer de nouvelles technologies pour progresser.</p>
+          </div>
+
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet/10 text-violet">
+              <i class="fas fa-arrows-rotate"></i>
+            </div>
+            <h3 class="mt-4 font-heading text-lg font-semibold text-white">Adaptabilité</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Capacité à évoluer rapidement dans de nouveaux environnements et contextes.</p>
+          </div>
+
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl" data-aos="fade-up" data-aos-delay="250">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3 class="mt-4 font-heading text-lg font-semibold text-white">Communication</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Partager clairement mes idées et mes solutions techniques avec précision.</p>
+          </div>
+
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan/10 text-cyan">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="mt-4 font-heading text-lg font-semibold text-white">Travail en équipe</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Collaborer efficacement avec différents profils pour atteindre un objectif commun.</p>
+          </div>
+
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl" data-aos="fade-up" data-aos-delay="350">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-violet/10 text-violet">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <h3 class="mt-4 font-heading text-lg font-semibold text-white">Autonomie</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Avancer efficacement sur des projets avec organisation, rigueur et responsabilité.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="mx-auto mt-16 max-w-7xl border-t border-white/10 px-4 py-10 sm:px-6 lg:px-8">
+    <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 shadow-[0_12px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl sm:p-8 lg:p-10" data-aos="fade-up">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.8fr_0.9fr]">
+        <div>
+          <a href="index.html" class="inline-flex items-center gap-3">
+            <img src="assets/images/Logo.png" alt="Logo Japhet BONDOUMBOU" class="h-11 w-11 rounded-full object-cover shadow-lg shadow-primary/20" />
+            <span class="leading-tight">
+              <span class="block font-heading text-lg font-semibold text-white">Japhet BONDOUMBOU</span>
+              <span class="block text-sm text-gray">Software Engineer</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-7 text-gray">Je conçois des solutions numériques modernes, performantes et centrées sur l'utilisateur.</p>
+        </div>
+
+        <div>
+          <h3 class="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Navigation</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray transition-all duration-300 hover:text-white">Accueil</a></li>
+            <li><a href="portfolio.html" class="text-gray transition-all duration-300 hover:text-white">Portfolio</a></li>
+            <li><a href="competences.html" class="text-gray transition-all duration-300 hover:text-white">Compétences</a></li>
+            <li><a href="apropos.html" class="text-gray transition-all duration-300 hover:text-white">À propos</a></li>
+            <li><a href="contact.html" class="text-gray transition-all duration-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Me contacter</h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="mailto:japhet.bondoumbou@example.com" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="far fa-envelope"></i></span>
+                Email
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/japhet-bondoumbou" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="fab fa-github"></i></span>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/japhetbondoumbou" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="fab fa-linkedin"></i></span>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-gray sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 Japhet BONDOUMBOU. Tous droits réservés.</p>
+        <p>Conçu et développé avec HTML, Tailwind CSS et JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top fixed bottom-6 right-6 w-12 h-12 bg-primary hover:bg-primary/90 text-white rounded-full flex items-center justify-center shadow-lg transition-all z-40" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

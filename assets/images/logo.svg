@@ -1,0 +1,15 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Logo Japhet BONDOUMBOU</title>
+  <desc id="logoDesc">Monogramme J et B stylisé en dégradé bleu, violet et cyan sur fond sombre.</desc>
+  <rect width="256" height="256" rx="64" fill="#09090B"/>
+  <rect x="24" y="24" width="208" height="208" rx="56" fill="url(#grad)"/>
+  <path d="M82 68h34c29 0 48 15 48 42 0 19-11 31-28 37l32 41h-27l-28-36h-11v36H82V68Zm34 56c14 0 22-8 22-21 0-13-8-20-22-20h-11v41h11Z" fill="#F8FAFC"/>
+  <path d="M145 68h30l28 76 28-76h30l-40 104h-32l-44-104Z" fill="#F8FAFC" opacity="0.95"/>
+  <defs>
+    <linearGradient id="grad" x1="32" y1="28" x2="224" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="55%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+</svg>

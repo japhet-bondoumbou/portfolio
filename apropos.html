@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos | Japhet BONDOUMBOU</title>
+  <meta name="description" content="Parcours, expériences et valeurs de Japhet BONDOUMBOU, Software Engineer." />
+  <meta name="keywords" content="à propos, parcours, CV, Japhet BONDOUMBOU, génie logiciel" />
+  <link rel="canonical" href="https://www.alexmartin.fr/apropos.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="À propos | Japhet BONDOUMBOU" />
+  <meta property="og:description" content="Découvrez le parcours de Japhet BONDOUMBOU." />
+  <meta property="og:url" content="https://www.alexmartin.fr/apropos.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            violet: '#7C3AED',
+            cyan: '#06B6D4',
+            dark: '#09090B',
+            darker: '#18181B',
+            gray: '#A1A1AA',
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-dark text-white font-body antialiased">
+
+  <header id="site-header" class="fixed top-4 left-1/2 z-50 w-[calc(100%-1rem)] max-w-6xl -translate-x-1/2 transition-all duration-300 sm:w-[calc(100%-2rem)]">
+    <nav class="mx-auto flex h-16 items-center justify-between rounded-full border border-white/10 bg-white/10 px-4 shadow-[0_10px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3 text-white transition-colors hover:text-primary">
+        <img src="assets/images/Logo.png" alt="Logo Japhet BONDOUMBOU" class="h-10 w-10 rounded-full object-cover shadow-lg shadow-primary/20" />
+        <span class="leading-tight">
+          <span class="block font-heading text-sm font-semibold sm:text-base">Japhet BONDOUMBOU</span>
+          <span class="block text-[10px] uppercase tracking-[0.28em] text-gray sm:text-[11px]">Software Engineer</span>
+        </span>
+      </a>
+      <div class="hidden items-center gap-2 md:flex">
+        <a href="index.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Accueil</a>
+        <a href="portfolio.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Portfolio</a>
+        <a href="competences.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Compétences</a>
+        <a href="apropos.html" class="nav-link rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15 hover:text-white">À propos</a>
+        <a href="contact.html" class="cta-nav ml-2 inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">Contact</a>
+      </div>
+      <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15 md:hidden" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars text-lg transition-all duration-300"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+      <div class="mt-3 flex flex-col gap-2 rounded-[1.4rem] border border-white/10 bg-dark/80 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+        <a href="index.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Accueil</a>
+        <a href="portfolio.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Portfolio</a>
+        <a href="competences.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Compétences</a>
+        <a href="apropos.html" class="nav-link rounded-full bg-white/10 px-4 py-2.5 text-sm font-medium text-white">À propos</a>
+        <a href="contact.html" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white text-center shadow-lg shadow-primary/20 transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pb-20 pt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section class="mb-20 flex flex-col items-center gap-10 rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-transparent p-6 shadow-[0_20px_60px_rgba(0,0,0,0.24)] backdrop-blur-xl lg:flex-row lg:items-center lg:gap-14 lg:p-10" data-aos="fade-up">
+        <div class="relative flex justify-center lg:w-1/3">
+          <div class="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 via-violet/30 to-cyan/40 blur-3xl"></div>
+          <div class="relative w-56 overflow-hidden rounded-full border border-white/10 bg-white/10 p-2 shadow-[0_20px_60px_rgba(0,0,0,0.28)] sm:w-64 lg:w-72">
+            <div class="absolute inset-0 z-10 rounded-full bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+            <img src="assets/images/Japhet.jpeg" alt="Japhet BONDOUMBOU" class="aspect-square h-full w-full rounded-full object-cover" loading="lazy" />
+          </div>
+          <div class="absolute bottom-3 left-4 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-white/90 backdrop-blur sm:bottom-6 sm:left-6">Software Engineering Student</div>
+          <div class="absolute right-2 top-3 rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-primary backdrop-blur sm:right-4 sm:top-4">Open to opportunities</div>
+        </div>
+
+        <div class="lg:w-2/3">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">À propos</p>
+          <h1 class="mt-3 font-heading text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">Bonjour, je suis Japhet BONDOUMBOU</h1>
+          <p class="mt-4 text-lg font-semibold text-primary">Software Engineer</p>
+          <p class="mt-4 max-w-2xl text-base leading-8 text-gray sm:text-lg">Étudiant en génie logiciel passionné par le développement web, les nouvelles technologies et la création de solutions numériques utiles. Je conçois des interfaces modernes et des applications performantes en combinant développement, design et réflexion produit.</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="assets/documents/BONDOUMBOU PEYA Japhet.pdf" download class="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">
+              <i class="fas fa-download"></i>
+              Télécharger mon CV
+            </a>
+            <a href="contact.html" class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:bg-white/10">
+              <i class="fas fa-paper-plane"></i>
+              Me contacter
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16" data-aos="fade-up">
+        <div class="mb-8 max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Parcours</p>
+          <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Mon parcours académique</h2>
+        </div>
+
+        <div class="relative">
+          <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/70 via-violet/50 to-transparent md:left-1/2 md:-translate-x-px"></div>
+          <div class="space-y-6">
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2 md:pr-10 md:text-right">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2024 - En cours</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Licence en Génie logiciel</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">ESGAE</p>
+                  <p class="mt-2 text-sm leading-7 text-gray">Formation actuelle orientée développement logiciel, conception d’applications et ingénierie informatique.</p>
+                </div>
+              </div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2"></div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2 md:pl-10">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2026</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">BTSE en Informatique de gestion</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">ESGAE</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2 md:pr-10 md:text-right">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2026</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Attestation de formation sur la transformation numérique fondée sur les droits</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">UNICEF via AGORA</p>
+                </div>
+              </div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2"></div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2 md:pl-10">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2026</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Certificat BSAFE</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">UNDSS - Nations Unies</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2 md:pr-10 md:text-right">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2024</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Baccalauréat scientifique</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">Christophe Mapika</p>
+                </div>
+              </div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2"></div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2 md:pl-10">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2023</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Attestation de formation en programmation en langage C</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">Fondation Privat Frédéric Ndeke</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16" data-aos="fade-up" data-aos-delay="100">
+        <div class="mb-8 max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Expérience</p>
+          <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Mon parcours professionnel</h2>
+        </div>
+
+        <div class="relative">
+          <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/70 via-violet/50 to-transparent md:left-1/2 md:-translate-x-px"></div>
+          <div class="space-y-6">
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2 md:pr-10 md:text-right">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">En cours</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Projet personnel - Développement d’une plateforme web</h3>
+                  <p class="mt-2 text-sm leading-7 text-gray">Création d’une plateforme de mise en relation entre recruteurs, formateurs et demandeurs d’emploi, avec focus sur conception, développement et réflexion produit.</p>
+                </div>
+              </div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2"></div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2 md:pl-10">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2026</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Stage académique - ARPCE</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">Brazzaville</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2 md:pr-10 md:text-right">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2026</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Stage académique - ACSI</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">Brazzaville</p>
+                </div>
+              </div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2"></div>
+            </div>
+
+            <div class="relative flex flex-col md:flex-row md:items-start md:gap-8">
+              <div class="md:w-1/2"></div>
+              <div class="absolute left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full border-2 border-dark bg-primary md:left-1/2"></div>
+              <div class="md:w-1/2 md:pl-10">
+                <div class="ml-10 rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 shadow-[0_16px_40px_rgba(0,0,0,0.16)] backdrop-blur-xl md:ml-0">
+                  <span class="text-sm font-semibold text-primary">2025</span>
+                  <h3 class="mt-2 font-heading text-lg font-semibold text-white">Assistant du directeur de la gare routière d’Oyo</h3>
+                  <p class="mt-2 text-sm font-medium text-white/80">Oyo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16" data-aos="fade-up" data-aos-delay="150">
+        <div class="mb-8 max-w-2xl">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Valeurs</p>
+          <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Mes valeurs</h2>
+          <p class="mt-3 text-sm leading-7 text-gray sm:text-base">Les principes qui guident ma façon d’apprendre, de concevoir et de collaborer.</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 text-center shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-white">Passion technologique</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Toujours explorer de nouvelles technologies et améliorer mes compétences.</p>
+          </div>
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 text-center shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan/10 text-cyan">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-white">Apprentissage continu</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Progresser constamment grâce à la pratique, la curiosité et la veille.</p>
+          </div>
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 text-center shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-violet/10 text-violet">
+              <i class="fas fa-sparkles"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-white">Qualité et simplicité</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Créer des solutions propres, accessibles et faciles à utiliser.</p>
+          </div>
+          <div class="rounded-[1.4rem] border border-white/10 bg-white/[0.03] p-6 text-center shadow-[0_12px_35px_rgba(0,0,0,0.16)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="font-heading text-lg font-semibold text-white">Impact</h3>
+            <p class="mt-2 text-sm leading-7 text-gray">Développer des solutions numériques utiles répondant à de vrais besoins.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="rounded-[2rem] border border-primary/20 bg-gradient-to-r from-primary/15 via-violet/10 to-cyan/10 p-8 shadow-[0_20px_60px_rgba(37,99,235,0.12)] sm:p-10">
+          <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Vision</p>
+          <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Ma vision</h2>
+          <p class="mt-5 max-w-3xl text-base leading-8 text-gray sm:text-lg">Construire des solutions numériques innovantes qui facilitent le quotidien des utilisateurs et contribuent au développement de l’écosystème technologique africain.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="mx-auto mt-16 max-w-7xl border-t border-white/10 px-4 py-10 sm:px-6 lg:px-8">
+    <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 shadow-[0_12px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl sm:p-8 lg:p-10" data-aos="fade-up">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.8fr_0.9fr]">
+        <div>
+          <a href="index.html" class="inline-flex items-center gap-3">
+            <img src="assets/images/Logo.png" alt="Logo Japhet BONDOUMBOU" class="h-11 w-11 rounded-full object-cover shadow-lg shadow-primary/20" />
+            <span class="leading-tight">
+              <span class="block font-heading text-lg font-semibold text-white">Japhet BONDOUMBOU</span>
+              <span class="block text-sm text-gray">Software Engineer</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-7 text-gray">Je conçois des solutions numériques modernes, performantes et centrées sur l'utilisateur.</p>
+        </div>
+
+        <div>
+          <h3 class="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Navigation</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray transition-all duration-300 hover:text-white">Accueil</a></li>
+            <li><a href="portfolio.html" class="text-gray transition-all duration-300 hover:text-white">Portfolio</a></li>
+            <li><a href="competences.html" class="text-gray transition-all duration-300 hover:text-white">Compétences</a></li>
+            <li><a href="apropos.html" class="text-gray transition-all duration-300 hover:text-white">À propos</a></li>
+            <li><a href="contact.html" class="text-gray transition-all duration-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Me contacter</h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="mailto:japhet.bondoumbou@example.com" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="far fa-envelope"></i></span>
+                Email
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/japhet-bondoumbou" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="fab fa-github"></i></span>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/japhetbondoumbou" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="fab fa-linkedin"></i></span>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-gray sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 Japhet BONDOUMBOU. Tous droits réservés.</p>
+        <p>Conçu et développé avec HTML, Tailwind CSS et JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top fixed bottom-6 right-6 w-12 h-12 bg-primary hover:bg-primary/90 text-white rounded-full flex items-center justify-center shadow-lg transition-all z-40" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Japhet BONDOUMBOU - Projets</title>
+  <meta name="description" content="Découvrez tous les projets de Japhet BONDOUMBOU, Software Engineer." />
+  <meta name="keywords" content="portfolio, projets, développement web, Japhet BONDOUMBOU" />
+  <link rel="canonical" href="https://www.alexmartin.fr/portfolio.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Portfolio | Japhet BONDOUMBOU" />
+  <meta property="og:description" content="Projets de Japhet BONDOUMBOU." />
+  <meta property="og:url" content="https://www.alexmartin.fr/portfolio.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/images/Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            violet: '#7C3AED',
+            cyan: '#06B6D4',
+            dark: '#09090B',
+            darker: '#18181B',
+            gray: '#A1A1AA',
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-dark text-white font-body antialiased">
+
+  <!-- Navigation (identique à l'accueil) -->
+  <header id="site-header" class="fixed top-4 left-1/2 z-50 w-[calc(100%-1rem)] max-w-6xl -translate-x-1/2 transition-all duration-300 sm:w-[calc(100%-2rem)]">
+    <nav class="mx-auto flex h-16 items-center justify-between rounded-full border border-white/10 bg-white/10 px-4 shadow-[0_10px_40px_rgba(0,0,0,0.25)] backdrop-blur-xl sm:px-6 lg:px-8">
+      <a href="index.html" class="flex items-center gap-3 text-white transition-colors hover:text-primary">
+        <img src="assets/images/Logo.png" alt="Logo Japhet BONDOUMBOU" class="h-10 w-10 rounded-full object-cover shadow-lg shadow-primary/20" />
+        <span class="leading-tight">
+          <span class="block font-heading text-sm font-semibold sm:text-base">Japhet BONDOUMBOU</span>
+          <span class="block text-[10px] uppercase tracking-[0.28em] text-gray sm:text-[11px]">Software Engineer</span>
+        </span>
+      </a>
+      <div class="hidden items-center gap-2 md:flex">
+        <a href="index.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Accueil</a>
+        <a href="portfolio.html" class="nav-link rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15 hover:text-white">Portfolio</a>
+        <a href="competences.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Compétences</a>
+        <a href="apropos.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">À propos</a>
+        <a href="contact.html" class="cta-nav ml-2 inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">Contact</a>
+      </div>
+      <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15 md:hidden" aria-label="Menu" aria-expanded="false">
+        <i class="fas fa-bars text-lg transition-all duration-300"></i>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="mobile-menu md:hidden">
+      <div class="mt-3 flex flex-col gap-2 rounded-[1.4rem] border border-white/10 bg-dark/80 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl">
+        <a href="index.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Accueil</a>
+        <a href="portfolio.html" class="nav-link rounded-full bg-white/10 px-4 py-2.5 text-sm font-medium text-white">Portfolio</a>
+        <a href="competences.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">Compétences</a>
+        <a href="apropos.html" class="nav-link rounded-full px-4 py-2.5 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">À propos</a>
+        <a href="contact.html" class="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white text-center shadow-lg shadow-primary/20 transition-all duration-300">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pb-20 pt-24">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-gradient-to-br from-white/[0.06] via-white/[0.03] to-transparent px-6 py-12 shadow-[0_20px_60px_rgba(0,0,0,0.24)] backdrop-blur-xl sm:px-8 lg:px-12 lg:py-16" data-aos="fade-up">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,0.2),transparent_45%)]"></div>
+        <div class="relative mx-auto max-w-3xl text-center">
+          <span class="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.32em] text-primary/90">
+            <span class="h-2 w-2 rounded-full bg-primary"></span>
+            Portfolio
+          </span>
+          <h1 class="font-heading text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">Mes réalisations</h1>
+          <p class="mx-auto mt-5 text-base leading-8 text-gray sm:text-lg">Découvrez une sélection de projets développés avec une approche combinant performance, design et expérience utilisateur.</p>
+        </div>
+      </section>
+
+      <section class="mt-10" data-aos="fade-up" data-aos-delay="100">
+        <div class="overflow-x-auto pb-2">
+          <div class="flex min-w-max items-center justify-center gap-3 sm:justify-start lg:justify-center">
+            <button type="button" class="filter-btn rounded-full border border-white/10 bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5" data-filter="all" aria-pressed="true">Tous</button>
+            <button type="button" class="filter-btn rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-gray transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:text-white" data-filter="web" aria-pressed="false">Web</button>
+            <button type="button" class="filter-btn rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-gray transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:text-white" data-filter="mobile" aria-pressed="false">Mobile</button>
+            <button type="button" class="filter-btn rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-gray transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:text-white" data-filter="uiux" aria-pressed="false">UI/UX</button>
+            <button type="button" class="filter-btn rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-gray transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:text-white" data-filter="saas" aria-pressed="false">SaaS</button>
+            <button type="button" class="filter-btn rounded-full border border-white/10 bg-white/5 px-5 py-2.5 text-sm font-semibold text-gray transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:text-white" data-filter="other" aria-pressed="false">Autres</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-12">
+        <div id="projects-grid" class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="project-card group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-category="web saas">
+            <div class="absolute left-4 top-4 z-10">
+              <span class="rounded-full border border-white/15 bg-black/45 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">Projet phare</span>
+            </div>
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=900&h=560&fit=crop" alt="TaskFlow" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition duration-500 group-hover:from-black/80"></div>
+              <span class="absolute right-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">Terminé</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-white">TaskFlow</h3>
+              <p class="mt-3 text-sm leading-7 text-gray">Application de gestion de tâches collaborative conçue pour fluidifier le travail d’équipe en temps réel.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">React</span>
+                <span class="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">Node.js</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray">MongoDB</span>
+              </div>
+              <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"><span>Voir le projet</span><i class="fas fa-arrow-right text-xs"></i></a>
+                <a href="#" class="text-sm font-medium text-gray transition-all duration-300 hover:text-white">Code source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-category="web uiux">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&h=560&fit=crop" alt="DevBlog" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition duration-500 group-hover:from-black/80"></div>
+              <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">Terminé</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-white">DevBlog</h3>
+              <p class="mt-3 text-sm leading-7 text-gray">Plateforme éditoriale pensée pour la lisibilité, la rapidité de publication et l’engagement.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">Next.js</span>
+                <span class="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">Tailwind</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray">GraphQL</span>
+              </div>
+              <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"><span>Voir le projet</span><i class="fas fa-arrow-right text-xs"></i></a>
+                <a href="#" class="text-sm font-medium text-gray transition-all duration-300 hover:text-white">Code source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-category="mobile web">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?w=900&h=560&fit=crop" alt="WeatherNow" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition duration-500 group-hover:from-black/80"></div>
+              <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">En développement</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-white">WeatherNow</h3>
+              <p class="mt-3 text-sm leading-7 text-gray">Expérience météo moderne avec géolocalisation, prévisions et interface pensée mobile.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">JavaScript</span>
+                <span class="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">API</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray">PWA</span>
+              </div>
+              <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"><span>Voir le projet</span><i class="fas fa-arrow-right text-xs"></i></a>
+                <a href="#" class="text-sm font-medium text-gray transition-all duration-300 hover:text-white">Code source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-category="web saas">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&h=560&fit=crop" alt="E-Shop" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition duration-500 group-hover:from-black/80"></div>
+              <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">Terminé</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-white">E-Shop</h3>
+              <p class="mt-3 text-sm leading-7 text-gray">Boutique en ligne pensée pour la conversion, la sécurité et l’expérience d’achat fluide.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">React</span>
+                <span class="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">Stripe</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray">Firebase</span>
+              </div>
+              <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"><span>Voir le projet</span><i class="fas fa-arrow-right text-xs"></i></a>
+                <a href="#" class="text-sm font-medium text-gray transition-all duration-300 hover:text-white">Code source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-category="web other">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=900&h=560&fit=crop" alt="ChatApp" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition duration-500 group-hover:from-black/80"></div>
+              <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">Projet académique</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-white">ChatApp</h3>
+              <p class="mt-3 text-sm leading-7 text-gray">Messagerie instantanée avec salons de discussion et expérience de conversation réactive.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">Socket.io</span>
+                <span class="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">Express</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray">PostgreSQL</span>
+              </div>
+              <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"><span>Voir le projet</span><i class="fas fa-arrow-right text-xs"></i></a>
+                <a href="#" class="text-sm font-medium text-gray transition-all duration-300 hover:text-white">Code source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-cyan/40 hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]" data-category="uiux web">
+            <div class="relative aspect-[16/10] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=900&h=560&fit=crop" alt="Portfolio Creator" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent transition duration-500 group-hover:from-black/80"></div>
+              <span class="absolute left-4 top-4 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.24em] text-white/90 backdrop-blur">Projet personnel</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-white">Portfolio Creator</h3>
+              <p class="mt-3 text-sm leading-7 text-gray">Outil de création de portfolios avec logique de personnalisation et expérience de parcours fluide.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">Vue.js</span>
+                <span class="rounded-full border border-cyan/20 bg-cyan/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">Firebase</span>
+                <span class="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-gray">UI Kit</span>
+              </div>
+              <div class="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-300 hover:gap-3"><span>Voir le projet</span><i class="fas fa-arrow-right text-xs"></i></a>
+                <a href="#" class="text-sm font-medium text-gray transition-all duration-300 hover:text-white">Code source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mt-16" data-aos="fade-up" data-aos-delay="150">
+        <div class="rounded-[2rem] border border-white/10 bg-white/[0.04] p-8 shadow-[0_18px_50px_rgba(0,0,0,0.18)] backdrop-blur-xl sm:p-10">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.28em] text-primary/80">Méthode</p>
+              <h2 class="mt-2 font-heading text-2xl font-semibold text-white sm:text-3xl">Ma méthode de travail</h2>
+            </div>
+            <p class="max-w-2xl text-sm leading-7 text-gray sm:text-base">Chaque projet repose sur une logique claire : comprendre, créer et itérer avec rigueur pour livrer des solutions utiles et durables.</p>
+          </div>
+          <div class="mt-8 grid gap-4 lg:grid-cols-3">
+            <div class="rounded-[1.4rem] border border-white/10 bg-dark/70 p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <i class="fas fa-magnifying-glass-chart text-lg"></i>
+              </div>
+              <h3 class="mt-4 font-heading text-lg font-semibold text-white">01 — Analyse</h3>
+              <p class="mt-2 text-sm leading-7 text-gray">Comprendre le besoin, les usages et la stratégie pour poser une base solide avant toute création.</p>
+            </div>
+            <div class="rounded-[1.4rem] border border-white/10 bg-dark/70 p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <i class="fas fa-code text-lg"></i>
+              </div>
+              <h3 class="mt-4 font-heading text-lg font-semibold text-white">02 — Développement</h3>
+              <p class="mt-2 text-sm leading-7 text-gray">Créer une solution moderne, performante et adaptée aux objectifs métier avec une attention particulière à l’UX.</p>
+            </div>
+            <div class="rounded-[1.4rem] border border-white/10 bg-dark/70 p-6">
+              <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <i class="fas fa-rocket text-lg"></i>
+              </div>
+              <h3 class="mt-4 font-heading text-lg font-semibold text-white">03 — Déploiement</h3>
+              <p class="mt-2 text-sm leading-7 text-gray">Mettre en production puis améliorer continuellement pour garantir une expérience toujours plus robuste.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-16" data-aos="fade-up" data-aos-delay="200">
+        <div class="rounded-[2rem] border border-primary/20 bg-gradient-to-r from-primary/15 via-violet/10 to-cyan/10 p-8 text-center shadow-[0_20px_60px_rgba(37,99,235,0.12)] sm:p-12">
+          <h2 class="font-heading text-3xl font-semibold text-white sm:text-4xl">Vous avez un projet similaire ?</h2>
+          <p class="mx-auto mt-4 max-w-2xl text-base leading-8 text-gray">Discutons ensemble de la manière de le transformer en solution numérique à la fois élégante, performante et impactante.</p>
+          <a href="contact.html" class="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">Me contacter</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mx-auto mt-16 max-w-7xl border-t border-white/10 px-4 py-10 sm:px-6 lg:px-8">
+    <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-6 shadow-[0_12px_40px_rgba(0,0,0,0.18)] backdrop-blur-xl sm:p-8 lg:p-10" data-aos="fade-up">
+      <div class="grid gap-8 lg:grid-cols-[1.1fr_0.8fr_0.9fr]">
+        <div>
+          <a href="index.html" class="inline-flex items-center gap-3">
+            <img src="assets/images/Logo.png" alt="Logo Japhet BONDOUMBOU" class="h-11 w-11 rounded-full object-cover shadow-lg shadow-primary/20" />
+            <span class="leading-tight">
+              <span class="block font-heading text-lg font-semibold text-white">Japhet BONDOUMBOU</span>
+              <span class="block text-sm text-gray">Software Engineer</span>
+            </span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm leading-7 text-gray">Je conçois des solutions numériques modernes, performantes et centrées sur l'utilisateur.</p>
+        </div>
+
+        <div>
+          <h3 class="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Navigation</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray transition-all duration-300 hover:text-white">Accueil</a></li>
+            <li><a href="portfolio.html" class="text-gray transition-all duration-300 hover:text-white">Portfolio</a></li>
+            <li><a href="competences.html" class="text-gray transition-all duration-300 hover:text-white">Compétences</a></li>
+            <li><a href="apropos.html" class="text-gray transition-all duration-300 hover:text-white">À propos</a></li>
+            <li><a href="contact.html" class="text-gray transition-all duration-300 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-4 font-heading text-sm font-semibold uppercase tracking-[0.3em] text-white/90">Me contacter</h3>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="mailto:japhet.bondoumbou@example.com" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="far fa-envelope"></i></span>
+                Email
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/japhet-bondoumbou" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="fab fa-github"></i></span>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/japhetbondoumbou" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-3 text-gray transition-all duration-300 hover:text-white">
+                <span class="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-primary transition-transform duration-300 group-hover:scale-110"><i class="fab fa-linkedin"></i></span>
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm text-gray sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 Japhet BONDOUMBOU. Tous droits réservés.</p>
+        <p>Conçu et développé avec HTML, Tailwind CSS et JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top fixed bottom-6 right-6 w-12 h-12 bg-primary hover:bg-primary/90 text-white rounded-full flex items-center justify-center shadow-lg transition-all z-40" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
