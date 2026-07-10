@@ -12,6 +12,7 @@ AOS.init({
   duration: 800,
   once: true,
   easing: 'ease-out',
+  disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
 });
 
 // ---- Menu mobile ----

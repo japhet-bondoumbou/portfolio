@@ -1,6 +1,11 @@
 /* ===== Style personnalisé minimal ===== */
 html {
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -85,6 +90,31 @@ html {
 
 .hero-chip:hover {
   box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+}
+
+.hero-image-shell {
+  isolation: isolate;
+  background: linear-gradient(90deg, rgba(2, 6, 23, 0.24) 0%, rgba(2, 6, 23, 0.06) 42%, rgba(2, 6, 23, 0.18) 100%);
+}
+
+.hero-image-shell::before {
+  content: "";
+  position: absolute;
+  inset: -8% -6% -10% -4%;
+  background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.12), transparent 24%),
+    linear-gradient(90deg, rgba(2, 6, 23, 0.18) 0%, rgba(2, 6, 23, 0.04) 38%, rgba(2, 6, 23, 0.18) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.08) translateX(3%) translateY(-1%);
+  object-position: center 18%;
+  filter: saturate(1.04) contrast(1.04) brightness(0.96);
+  mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 24%, rgba(0, 0, 0, 0.8) 54%, rgba(0, 0, 0, 0.24) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.96) 24%, rgba(0, 0, 0, 0.8) 54%, rgba(0, 0, 0, 0.24) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 .hero-card-float {
