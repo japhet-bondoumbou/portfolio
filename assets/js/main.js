@@ -186,3 +186,20 @@ const observer = new MutationObserver(() => {
   if (label) label.textContent = isDark ? 'Sombre' : 'Clair';
 });
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+/* Site loader handling: hide overlay when page fully loads (with fallback) */
+(function () {
+  const loader = document.getElementById('site-loader');
+  if (!loader) return;
+
+  function hideLoader() {
+    if (!loader) return;
+    loader.classList.add('hidden');
+    // remove from DOM after transition
+    setTimeout(() => { if (loader.parentNode) loader.parentNode.removeChild(loader); }, 600);
+  }
+
+  window.addEventListener('load', hideLoader);
+  // Fallback: ensure loader disappears after 3s
+  setTimeout(() => { hideLoader(); }, 3000);
+})();
