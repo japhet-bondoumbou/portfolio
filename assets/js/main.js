@@ -181,5 +181,8 @@ const observer = new MutationObserver(() => {
   const isDark = document.documentElement.classList.contains('dark');
   themeToggle.setAttribute('aria-checked', String(isDark));
   themeToggle.setAttribute('title', isDark ? 'Passer en mode clair' : 'Passer en mode sombre');
+  // Update visible label text next to the switch
+  const label = themeToggle.parentElement ? themeToggle.parentElement.querySelector('.switch-label') : document.querySelector('.switch-label');
+  if (label) label.textContent = isDark ? 'Sombre' : 'Clair';
 });
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });

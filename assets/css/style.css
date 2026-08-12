@@ -281,3 +281,20 @@ html.light .theme-switch .switch-thumb { box-shadow: 0 8px 22px var(--primary-sh
 
 /* spacing/alignment helper to keep toggle aligned with nav items */
 .nav-toggle-wrapper { display: inline-flex; align-items: center; gap: 0.5rem; }
+
+/* Label next to the switch */
+.switch-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.92);
+  user-select: none;
+  margin-left: 0.25rem;
+  transition: color 0.22s ease, opacity 0.22s ease;
+}
+
+html.light .switch-label { color: var(--text-primary); }
+html.dark .switch-label { color: rgba(255,255,255,0.92); }
+
+@media (prefers-reduced-motion: reduce) {
+  .switch-label { transition: none !important; }
+}
