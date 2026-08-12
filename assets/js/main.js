@@ -151,17 +151,9 @@ function applyTheme(theme, persist = false) {
   document.documentElement.classList.add(theme);
   const themeToggle = document.getElementById('theme-toggle');
   if (themeToggle) {
-    const icon = themeToggle.querySelector('i');
-    const label = themeToggle.querySelector('.theme-pill-label');
-    if (icon) {
-      icon.classList.toggle('fa-sun', theme === 'light');
-      icon.classList.toggle('fa-moon', theme === 'dark');
-    }
-    if (label) {
-      label.textContent = theme === 'dark' ? 'Sombre' : 'Clair';
-    }
-    themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
-    themeToggle.setAttribute('title', theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre');
+    const isDark = theme === 'dark';
+    themeToggle.setAttribute('aria-checked', String(isDark));
+    themeToggle.setAttribute('title', isDark ? 'Passer en mode clair' : 'Passer en mode sombre');
   }
   if (persist) {
     try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
@@ -187,7 +179,7 @@ const observer = new MutationObserver(() => {
   const themeToggle = document.getElementById('theme-toggle');
   if (!themeToggle) return;
   const isDark = document.documentElement.classList.contains('dark');
-  themeToggle.setAttribute('aria-pressed', String(isDark));
+  themeToggle.setAttribute('aria-checked', String(isDark));
   themeToggle.setAttribute('title', isDark ? 'Passer en mode clair' : 'Passer en mode sombre');
 });
 observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
