@@ -264,11 +264,15 @@ html.dark .theme-switch { background: rgba(255,255,255,0.04); border-color: rgba
   pointer-events: none;
   z-index: 1;
 }
-.theme-switch .switch-icon-moon { left: 8px; }
-.theme-switch .switch-icon-sun { right: 8px; opacity: 0; transform: translateY(-50%) scale(0.92); }
+
+.theme-switch .switch-icon-moon { right: 8px; }
+.theme-switch .switch-icon-sun { left: 8px; opacity: 0; transform: translateY(-50%) scale(0.92); }
 .theme-switch .switch-thumb { z-index: 2; }
 
-/* Toggle icon states */
+/* Toggle icon states: dark = moon visible on right, light = sun visible on left */
+html.dark .theme-switch .switch-icon-moon { opacity: 1; transform: translateY(-50%) scale(1); color: rgba(255,255,255,0.95); }
+html.dark .theme-switch .switch-icon-sun { opacity: 0; transform: translateY(-50%) scale(0.92); }
+
 html.light .theme-switch .switch-icon-sun { opacity: 1; transform: translateY(-50%) scale(1); color: var(--text-primary); }
 html.light .theme-switch .switch-icon-moon { opacity: 0; transform: translateY(-50%) scale(0.92); }
 html.light .theme-switch .switch-thumb { box-shadow: 0 8px 22px var(--primary-shadow); }
