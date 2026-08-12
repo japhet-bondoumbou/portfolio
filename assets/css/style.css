@@ -213,3 +213,42 @@ html, body, nav, header, main, footer, .project-card, article {
 @media (prefers-reduced-motion: reduce) {
   html, body, nav, header, main, footer, .project-card, article { transition: none !important; }
 }
+
+/* Theme toggle improvements */
+#theme-toggle {
+  width: 44px;
+  height: 44px;
+  padding: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.12s ease;
+}
+
+#theme-toggle:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(37,99,235,0.08);
+}
+
+/* Icon cross-fade between moon and sun */
+#theme-toggle i {
+  position: relative;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+/* default (dark) */
+#theme-toggle .fa-sun { opacity: 0; transform: rotate(-20deg) scale(0.9); }
+#theme-toggle .fa-moon { opacity: 1; transform: rotate(0deg) scale(1); }
+
+/* when light theme is active, show sun */
+html.light #theme-toggle .fa-sun { opacity: 1; transform: rotate(0deg) scale(1); }
+html.light #theme-toggle .fa-moon { opacity: 0; transform: rotate(20deg) scale(0.9); }
+
+/* colors per theme */
+html.light #theme-toggle { background: var(--surface); color: var(--text-primary); border-color: var(--border-color); }
+html.dark #theme-toggle { background: rgba(255,255,255,0.04); color: #fff; border-color: rgba(255,255,255,0.12); }
+
+/* spacing/alignment helper to keep toggle aligned with nav items */
+.nav-toggle-wrapper { display: inline-flex; align-items: center; gap: 0.5rem; }

@@ -172,3 +172,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+// Update toggle accessibility state when theme changes programmatically
+const observer = new MutationObserver(() => {
+  const themeToggle = document.getElementById('theme-toggle');
+  if (!themeToggle) return;
+  const isDark = document.documentElement.classList.contains('dark');
+  themeToggle.setAttribute('aria-pressed', String(isDark));
+  themeToggle.setAttribute('title', isDark ? 'Passer en mode clair' : 'Passer en mode sombre');
+});
+observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });

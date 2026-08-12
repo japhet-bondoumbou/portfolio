@@ -88,14 +88,15 @@
         <a href="apropos.html" class="nav-link rounded-full px-4 py-2 text-sm font-medium text-gray transition-all duration-300 hover:bg-white/10 hover:text-white">À propos</a>
         <a href="contact.html" class="cta-nav ml-2 inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">Contact</a>
       </div>
-      <!-- Theme toggle (visible desktop & mobile) -->
-      <button id="theme-toggle" class="ml-3 flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15" aria-label="Basculer thème" title="Basculer thème">
-        <i id="theme-toggle-icon" class="fas fa-moon"></i>
-      </button>
+      <div class="nav-toggle-wrapper">
+        <button id="theme-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15" aria-label="Basculer thème" title="Basculer thème">
+          <i id="theme-toggle-icon" class="fas fa-moon"></i>
+        </button>
 
-      <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15 md:hidden" aria-label="Menu" aria-expanded="false">
-        <i class="fas fa-bars text-lg transition-all duration-300"></i>
-      </button>
+        <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15 md:hidden" aria-label="Menu" aria-expanded="false">
+          <i class="fas fa-bars text-lg transition-all duration-300"></i>
+        </button>
+      </div>
     </nav>
     <div id="mobile-menu" class="mobile-menu md:hidden">
       <div class="mt-3 flex flex-col gap-2 rounded-[1.4rem] border border-white/10 bg-dark/80 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-xl">
