@@ -149,10 +149,19 @@ function getPreferredTheme() {
 function applyTheme(theme, persist = false) {
   document.documentElement.classList.remove('light', 'dark');
   document.documentElement.classList.add(theme);
-  const icon = document.getElementById('theme-toggle-icon');
-  if (icon) {
-    icon.classList.toggle('fa-sun', theme === 'light');
-    icon.classList.toggle('fa-moon', theme === 'dark');
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    const icon = themeToggle.querySelector('i');
+    const label = themeToggle.querySelector('.theme-pill-label');
+    if (icon) {
+      icon.classList.toggle('fa-sun', theme === 'light');
+      icon.classList.toggle('fa-moon', theme === 'dark');
+    }
+    if (label) {
+      label.textContent = theme === 'dark' ? 'Sombre' : 'Clair';
+    }
+    themeToggle.setAttribute('aria-pressed', String(theme === 'dark'));
+    themeToggle.setAttribute('title', theme === 'dark' ? 'Passer en mode clair' : 'Passer en mode sombre');
   }
   if (persist) {
     try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
