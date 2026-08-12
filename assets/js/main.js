@@ -131,3 +131,44 @@ function setActiveNavLink() {
   });
 }
 document.addEventListener('DOMContentLoaded', setActiveNavLink);
+
+// ---- Theme (light / dark) ----
+const THEME_KEY = 'portfolio-theme';
+
+function getPreferredTheme() {
+  try {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (stored === 'light' || stored === 'dark') return stored;
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) return 'dark';
+    return 'light';
+  } catch (e) {
+    return 'dark';
+  }
+}
+
+function applyTheme(theme, persist = false) {
+  document.documentElement.classList.remove('light', 'dark');
+  document.documentElement.classList.add(theme);
+  const icon = document.getElementById('theme-toggle-icon');
+  if (icon) {
+    icon.classList.toggle('fa-sun', theme === 'light');
+    icon.classList.toggle('fa-moon', theme === 'dark');
+  }
+  if (persist) {
+    try { localStorage.setItem(THEME_KEY, theme); } catch (e) {}
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const initial = getPreferredTheme();
+  applyTheme(initial, false);
+
+  const themeToggle = document.getElementById('theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      const next = isDark ? 'light' : 'dark';
+      applyTheme(next, true);
+    });
+  }
+});

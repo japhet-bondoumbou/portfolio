@@ -24,6 +24,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Theme initialisation: appliquer le bon thème le plus tôt possible pour éviter le FOUC -->
+  <script>
+    (function(){
+      try {
+        var key = 'portfolio-theme';
+        var stored = localStorage.getItem(key);
+        var theme;
+        if (stored === 'light' || stored === 'dark') theme = stored;
+        else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+        else theme = 'light';
+        document.documentElement.classList.add(theme);
+      } catch (e) {}
+    })();
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -73,6 +87,11 @@
         <a href="apropos.html" class="nav-link rounded-full bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-sm ring-1 ring-white/10 transition-all duration-300 hover:bg-white/15 hover:text-white">À propos</a>
         <a href="contact.html" class="cta-nav ml-2 inline-flex items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary/90">Contact</a>
       </div>
+      <!-- Theme toggle (visible desktop & mobile) -->
+      <button id="theme-toggle" class="ml-3 flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15" aria-label="Basculer thème" title="Basculer thème">
+        <i id="theme-toggle-icon" class="fas fa-moon"></i>
+      </button>
+
       <button id="menu-toggle" class="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/10 text-white transition-all duration-300 hover:bg-white/15 md:hidden" aria-label="Menu" aria-expanded="false">
         <i class="fas fa-bars text-lg transition-all duration-300"></i>
       </button>

@@ -145,3 +145,71 @@ body {
   visibility: visible;
   transform: translateY(0);
 }
+
+/* -------------------------- */
+/* Thème clair (overrides)   */
+/* Appliqué lorsque <html> a la classe 'light' */
+/* -------------------------- */
+
+html.light {
+  --site-bg: #f8fafc;
+  --surface: #ffffff;
+  --text-primary: #0f172a;
+  --text-muted: #64748b;
+  --border-color: rgba(15,23,42,0.06);
+  --glass: rgba(15,23,42,0.02);
+  --primary-shadow: rgba(37,99,235,0.12);
+  color-scheme: light;
+}
+
+html.light body {
+  background: var(--site-bg) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Override des textes définis avec les utilitaires Tailwind */
+html.light .text-white { color: var(--text-primary) !important; }
+html.light .text-gray { color: var(--text-muted) !important; }
+
+/* Surfaces (nav, cartes, modales) */
+html.light nav,
+html.light .mobile-menu,
+html.light .project-card,
+html.light article,
+html.light .rounded-[1.6rem],
+html.light .rounded-[1.5rem],
+html.light .rounded-[1.75rem] {
+  background: var(--surface) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 12px 35px rgba(2,6,23,0.04) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Bordures utilitaires fréquemment utilisées */
+html.light .border-white\/10,
+html.light .border-white\/15 { border-color: var(--border-color) !important; }
+
+/* Fonds translucides courants */
+html.light .bg-white\/5,
+html.light .bg-white\/10,
+html.light .bg-white\/15,
+html.light .bg-white\/[0.04],
+html.light .bg-white\/[0.03],
+html.light .bg-white\/[0.06] {
+  background-color: var(--glass) !important;
+}
+
+/* Bouton CTA primary (garder la tonalité) */
+html.light .cta-nav { color: #fff; }
+
+/* Images : pas d'inversion */
+html.light img { filter: none !important; }
+
+/* Transitions légères pour le changement de thème */
+html, body, nav, header, main, footer, .project-card, article {
+  transition: background-color 0.32s ease, color 0.32s ease, border-color 0.32s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html, body, nav, header, main, footer, .project-card, article { transition: none !important; }
+}
