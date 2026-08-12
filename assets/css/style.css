@@ -282,6 +282,39 @@ html.light .theme-switch .switch-thumb { box-shadow: 0 8px 22px var(--primary-sh
   .theme-switch .switch-thumb { transition: none !important; }
 }
 
+/* Hero title refinements (responsive + theme-aware colors) */
+.hero-title {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  /* responsive scaling alongside existing Tailwind sizes */
+  font-size: clamp(2.4rem, 4.8vw, 3.75rem); /* ~38px - 60px */
+}
+.hero-title span.block { display: block; }
+.hero-subtitle {
+  font-weight: 700;
+  font-size: 1.15em;
+  opacity: 0.98;
+  transition: color 0.22s ease, opacity 0.22s ease, transform 0.22s ease;
+}
+
+/* Light theme: darker primary text and adjusted accent for subtitle */
+html.light .hero-title { color: var(--text-primary) !important; }
+html.light .hero-subtitle { color: #6b21a8 !important; } /* deeper purple for contrast */
+
+/* Dark theme: ensure strong contrast */
+html.dark .hero-title { color: #fff; }
+html.dark .hero-subtitle { color: #c4b5fd; }
+
+@media (min-width: 1024px) {
+  .hero-title { font-size: clamp(3.4rem, 4.2vw, 4.5rem); }
+  .hero-subtitle { font-size: 1.08em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-subtitle { transition: none !important; }
+}
+
 
 /* spacing/alignment helper to keep toggle aligned with nav items */
 .nav-toggle-wrapper { display: inline-flex; align-items: center; gap: 0.5rem; }
